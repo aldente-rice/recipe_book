@@ -1,11 +1,12 @@
 /* Navigation Menu at top of every page */
-.drop-menu {
+.nav-menu {
     background-color: rgba(183, 183, 183, 0.9);
     width: 100%;
     font-family: "Hamburger";
     font-size: 25pt;
-    margin: 0;
-    padding: 0;
+    position: fixed;
+    top: 0;
+    float: left;
 }
 
 .search-button {
@@ -20,6 +21,15 @@
 #search-icon {
     width: 25px;
     height: 25px;
+}
+
+.nav-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.home-page a:hover {
+    display: block;
 }
 
 /* Content of the pages */
@@ -49,4 +59,11 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.hero-text h2 {
+    font-size: 35pt;
+    position: absolute;
+    top: 40%;
+    right: 0%;
 }
