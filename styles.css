@@ -6,12 +6,22 @@
     font-size: 25pt;
     position: fixed;
     top: 0;
-    float: left;
+}
+
+.search-bar {
+    font-family: "Hamburger";
+    font-size: 20pt;
+    position: relative;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    color: black;
 }
 
 .search-button {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     position: relative;
     top: 10px;
     margin: 0px;
@@ -19,8 +29,10 @@
 }
 
 #search-icon {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .nav-menu a:hover {
