@@ -2,7 +2,7 @@
 * | Navigation Bar at top of every page |   *
 ********************************************/
 .nav-menu {
-    background-color: rgba(183, 183, 183, 0.9);
+    background-color: rgba(183, 183, 183, 0.95);
     min-width: 1920px;
     max-width: 4096px;
     height: 50px;
@@ -144,7 +144,8 @@
 	background-size: cover;
 	position: static;
 	top: 0;
-	z-index: 0;
+	margin-top: -50px;
+	z-index: 0; /* first layer of page */
 }
 
 .hero-text {
@@ -153,7 +154,7 @@
 	font-family: "Hamburger";
 	font-size: 35pt;
 	position: static;
-	padding-top: 45px;
+	padding-top: 100px;
 
 }
 
