@@ -3,14 +3,14 @@
 ********************************************/
 .nav-menu {
     background-color: rgba(183, 183, 183, 0.95);
-    min-width: 1920px;
-    max-width: 4096px;
+    width: 100vw;
     height: 50px;
     font-family: "Hamburger";
     border: none;
     position: sticky;
     top: 0;
     z-index: 1;
+    overflow: hidden;
 }
 
 .nav-menu a:hover {
@@ -49,12 +49,6 @@
 }
 
 /* 'Quick n' Easy' drop down */
-.quick-dropdown {
-    display: inline-block;
-    position: relative;
-
-}
-
 .quick-drop-button {
     font-family: "Hamburger";
     font-size: 25pt;
@@ -135,10 +129,11 @@
 
 /* includes the hero image */
 .top-page {
-	background-image: linear-gradient(rgba(25, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./fuzhou-city.jpg");
+	background-image: linear-gradient(rgba(25, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+	    url("./fuzhou-city.jpg"); /* a slight red tint on hero image */
 	filter: blur(0.3px);
 	height: 400px;
-	width: 100%;
+
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -146,6 +141,8 @@
 	top: 0;
 	margin-top: -50px;
 	z-index: 0; /* first layer of page */
+	overflow: hidden;
+
 }
 
 .hero-text {
