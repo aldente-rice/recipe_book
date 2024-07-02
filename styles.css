@@ -1,22 +1,118 @@
-/* Navigation Menu at top of every page */
+/********************************************
+* | Navigation Bar at top of every page |   *
+********************************************/
 .nav-menu {
     background-color: rgba(183, 183, 183, 0.9);
-    width: 100%;
+    min-width: 1920px;
+    max-width: 4096px;
+    height: 50px;
     font-family: "Hamburger";
-    font-size: 25pt;
-    position: fixed;
+    border: none;
+    position: sticky;
     top: 0;
+    z-index: 1;
 }
 
-.search-bar {
+.nav-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+/* all of the navigation buttons */
+.nav-menu a {
+    float: left;
+    text-align: center;
+    font-size: 35px;
+    height: 60px;
+    width: 125px;
+    padding-top: 5px;
+}
+
+.menu-select {
+    font-family: "Hamburger";
+    font-size: 25pt;
+    border: none;
+    cursor: pointer;
+}
+
+/* Home Page button */
+.home-page {
+    font-family: "Hamburger";
+    font-size: 25pt;
+    border: none;
+    cursor: pointer;
+    height: 45px;
+    border: none;
+    padding: 0 1;
+}
+
+/* 'Quick n' Easy' drop down */
+.quick-dropdown {
+    display: inline-block;
+    position: relative;
+
+}
+
+.quick-drop-button {
+    font-family: "Hamburger";
+    font-size: 25pt;
+    border: none;
+    cursor: pointer;
+    height: 45px;
+    border: none;
+    padding: 0 1;
+}
+
+.quick-content {
+    font-family: "Hamburger";
+    font-size: 25pt;
+    border: none;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    width: 100%;
+    overflow: auto;
+    z-index: 2;
+}
+
+.quick-drop-button:hover .quick-content {
+    display: block;
+}
+
+/* Savory Page button */
+.savory-page {
+    font-family: "Hamburger";
+    font-size: 25pt;
+    border: none;
+    cursor: pointer;
+    height: 45px;
+    border: none;
+    padding: 0 1;
+}
+
+/* Sweets Page button */
+.sweets-page {
+    font-family: "Hamburger";
+    font-size: 25pt;
+    border: none;
+    cursor: pointer;
+    height: 45px;
+    border: none;
+    padding: 0 1;
+}
+
+/* search bar */
+/*.search-bar {
     font-family: "Hamburger";
     font-size: 20pt;
     position: relative;
-    top: -10px;
+    top: -10px; right: 0;
     margin: 0px;
     padding: 0px;
     border: none;
     color: black;
+    z-index: 1;
 }
 
 .search-button {
@@ -33,25 +129,10 @@
     height: 30px;
     margin: 0px;
     padding: 0px;
-}
+}*/
 
-.nav-menu a:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-}
-
-.home-page a:hover {
-    display: block;
-}
-
-/* Content of the pages */
-body {
-	background-color: rgb(220, 220, 215);
-	width: 100%;
-	margin: 0px;
-}
-
-.hero-image {
+/* includes the hero image */
+.top-page {
 	background-image: linear-gradient(rgba(25, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./fuzhou-city.jpg");
 	filter: blur(0.3px);
 	height: 400px;
@@ -59,8 +140,9 @@ body {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: fixed;
+	position: static;
 	top: 0;
+	z-index: 0;
 }
 
 .hero-text {
@@ -68,10 +150,9 @@ body {
 	color: rgba(210, 210, 210, 0.9);
 	font-family: "Hamburger";
 	font-size: 35pt;
-	position: relative;
-	top: 35%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	position: static;
+	padding-top: 45px;
+
 }
 
 .hero-text h2 {
@@ -81,7 +162,34 @@ body {
     right: 0%;
 }
 
-/* Home Page content */
-.home-page {
-    background-color: rgb(0, 100, 183);
+body {
+	background-color: rgb(220, 220, 215);
+	width: 100%;
+	margin: 0px;
 }
+
+/************************
+* | Home Page content | *
+************************/
+.home-page-content {
+
+}
+
+.search-bar {
+    font-family: "Hamburger";
+    font-size: 30px;
+    border-radius: 25px;
+    border: solid rgba(183, 183, 183, 1);
+    left: 50%;
+    width: 80%;
+    height: 35px;
+    position: relative;
+    left: 10%;
+    margin-top: 10px;
+    padding: 2px 10px;
+}
+
+.search-bar:focus, input:focus {
+    outline: none; /* removes blue outline when search bar is active */
+}
+
