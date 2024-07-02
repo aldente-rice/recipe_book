@@ -3,15 +3,14 @@
 ********************************************/
 .nav-menu {
     background-color: rgba(183, 183, 183, 0.95);
-    min-width: 1000px;
-    max-width: 4096px;
-    width: 100%;
+    width: 100vw;
     height: 50px;
     font-family: "Hamburger";
     border: none;
     position: sticky;
     top: 0;
     z-index: 1;
+    overflow: hidden;
 }
 
 .nav-menu a:hover {
@@ -50,12 +49,6 @@
 }
 
 /* 'Quick n' Easy' drop down */
-.quick-dropdown {
-    display: inline-block;
-    position: relative;
-
-}
-
 .quick-drop-button {
     font-family: "Hamburger";
     font-size: 25pt;
@@ -140,7 +133,7 @@
 	    url("./fuzhou-city.jpg"); /* a slight red tint on hero image */
 	filter: blur(0.3px);
 	height: 400px;
-	width: 100%;
+
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -148,6 +141,7 @@
 	top: 0;
 	margin-top: -50px;
 	z-index: 0; /* first layer of page */
+	overflow: hidden;
 
 }
 
