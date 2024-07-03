@@ -2,10 +2,12 @@
 * | Navigation Bar at top of every page |   *
 ********************************************/
 .nav-menu {
-    background-color: rgba(183, 183, 183, 0.95);
+   /* background-color: rgba(183, 183, 183, 0.95);*/
+    background-color: rgba(255, 255, 255, 0.9);
     width: 100vw;
     height: 50px;
     font-family: "Hamburger";
+    font-weight: bold;
     border: none;
     position: sticky;
     top: 0;
@@ -14,7 +16,7 @@
 }
 
 .nav-menu a:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 1);
     cursor: pointer;
     transform: translate(0px, -5px);
     height: 50px;
@@ -98,35 +100,6 @@
     padding: 0 1;
 }
 
-/* search bar */
-/*.search-bar {
-    font-family: "Hamburger";
-    font-size: 20pt;
-    position: relative;
-    top: -10px; right: 0;
-    margin: 0px;
-    padding: 0px;
-    border: none;
-    color: black;
-    z-index: 1;
-}
-
-.search-button {
-    width: 30px;
-    height: 30px;
-    position: relative;
-    top: 10px;
-    margin: 0px;
-    padding: 0px;
-}
-
-#search-icon {
-    width: 30px;
-    height: 30px;
-    margin: 0px;
-    padding: 0px;
-}*/
-
 /* includes the hero image */
 .top-page {
 	background-image: linear-gradient(rgba(25, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -147,7 +120,7 @@
 
 .hero-text {
 	text-align: center;
-	color: rgba(210, 210, 210, 0.9);
+	color: rgba(210, 210, 210, 0.95);
 	font-family: "Hamburger";
 	font-size: 35pt;
 	position: static;
@@ -162,15 +135,16 @@
     right: 0%;
 }
 
+/************************
+* | Home Page content | *
+************************/
 body {
+    /*background-color: rgb(255, 255, 255);*/
 	background-color: rgb(220, 220, 215);
 	width: 100%;
 	margin: 0px;
 }
 
-/************************
-* | Home Page content | *
-************************/
 .home-page-content {
 
 }
@@ -186,6 +160,7 @@ body {
     position: relative;
     left: 10%;
     margin-top: 10px;
+    margin-bottom: 5px;
     padding: 2px 10px;
 }
 
@@ -193,3 +168,36 @@ body {
     outline: none; /* removes blue outline when search bar is active */
 }
 
+.front-page {
+    font-family: "Hamburger";
+    margin-left: 10px; margin-right: 10px;
+    /*background-color: white;*/
+}
+
+.favorites-section {
+    text-align: center;
+    font-size: 55px;
+    margin: 10px 0px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: lighter;
+}
+
+.recipe-display {
+    position: absolute;
+    left: 50px;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.recipe-display h2, a {
+    margin-top: 0px;
+    color: black;
+    text-decoration: none;
+}
+
+#steamed-bass img {
+    width: 250px; height: 250px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.8);
+}
