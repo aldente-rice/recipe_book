@@ -211,6 +211,21 @@ body {
 }
 
 .invisible-divide {
-    width: 30px;
+    width: 50px;
+}
+
+/********************************
+* About Me section on home page *
+********************************/
+.about-me-text {
+  text-align: center;
+  font-size: 55px;
+  margin: 10px 0px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: lighter;
+}
+
+.about-me {
+
 }
 
