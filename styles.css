@@ -145,10 +145,6 @@ body {
 	margin: 0px;
 }
 
-.home-page-content {
-
-}
-
 .search-bar {
     font-family: "Hamburger";
     font-size: 30px;
@@ -173,6 +169,10 @@ body {
     margin-left: 10px; margin-right: 10px;
 
 }
+
+/*******************************
+* Favorites section (homepage) *
+*******************************/
 
 .favorites-text {
     text-align: center;
