@@ -171,7 +171,6 @@ body {
 .front-page {
     font-family: "Hamburger";
     margin-left: 10px; margin-right: 10px;
-    /*background-color: white;*/
 
 }
 
@@ -185,8 +184,8 @@ body {
 
 .favorites-section {
     display: block;
-    position: absolute;
-    float: left;
+    margin: 0px 30px;
+
 }
 
 .recipe-display h2, a {
@@ -202,7 +201,17 @@ body {
 .favorites-image img {
     width: 200px; height: 200px;
     border-radius: 25px;
-    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.8);
-    float: left;
+    box-shadow: 0px 00px 5px 5px rgba(255, 255, 255, 0.8);
 }
 
+.favorites-image {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.invisible-divide {
+    /*display: none;
+    content: "";
+    border-right:solid 1px black;*/
+}
