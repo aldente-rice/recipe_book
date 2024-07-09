@@ -211,7 +211,5 @@ body {
 }
 
 .invisible-divide {
-    /*display: none;
-    content: "";
-    border-right:solid 1px black;*/
+    width: 30px;
 }
