@@ -30,38 +30,13 @@
     height: 60px;
     width: 175px;
     padding-top: 5px;
-}
-
-.menu-select {
-    font-family: "Hamburger";
-    font-size: 25pt;
-    border: none;
     cursor: pointer;
+    border: none;
+    color: black;
+    text-decoration: none;
 }
 
-/* Home Page button */
-.home-page {
-    font-family: "Hamburger";
-    font-size: 25pt;
-    border: none;
-    cursor: pointer;
-    height: 45px;
-    border: none;
-    padding: 0 1;
-}
-
-/* 'Quick n' Easy' drop down */
-.quick-drop-button {
-    font-family: "Hamburger";
-    font-size: 25pt;
-    border: none;
-    cursor: pointer;
-    height: 45px;
-    border: none;
-    padding: 0 1;
-}
-
-.quick-content {
+/*.quick-content {
     font-family: "Hamburger";
     font-size: 25pt;
     border: none;
@@ -76,31 +51,13 @@
 
 .quick-drop-button:hover .quick-content {
     display: block;
-}
+}*/
 
-/* Savory Page button */
-.savory-page {
-    font-family: "Hamburger";
-    font-size: 25pt;
-    border: none;
-    cursor: pointer;
-    height: 45px;
-    border: none;
-    padding: 0 1;
-}
 
-/* Sweets Page button */
-.sweets-page {
-    font-family: "Hamburger";
-    font-size: 25pt;
-    border: none;
-    cursor: pointer;
-    height: 45px;
-    border: none;
-    padding: 0 1;
-}
 
-/* includes the hero image */
+/**************************
+* includes the hero image *
+**************************/
 .top-page {
 	background-image: linear-gradient(rgba(25, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 	    url("./fuzhou-city.jpg"); /* a slight red tint on hero image */
