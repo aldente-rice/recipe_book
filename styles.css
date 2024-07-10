@@ -174,7 +174,7 @@ body {
 * Favorites section (homepage) *
 *******************************/
 
-.favorites-text {
+.favorites-title {
     text-align: center;
     font-size: 55px;
     margin: 10px 0px;
@@ -195,7 +195,8 @@ body {
     width: 200px;
     float: left;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 0px;
+    font-size: 30px;
 }
 
 .favorites-image img {
@@ -217,7 +218,7 @@ body {
 /********************************
 * About Me section on home page *
 ********************************/
-.about-me-text {
+.about-me-title {
   text-align: center;
   font-size: 55px;
   margin: 10px 0px;
@@ -229,16 +230,19 @@ body {
 
 }
 
+.about-me h2 {
+    font-weight: lighter;
+    font-size: 32.5px;
+}
+
 /**************************************
 * Footer section (same for all pages) *
 **************************************/
 footer {
     background-color: rgba(255, 255, 255, 0.7);
-    height: 175px;
+    height: 190px;
     margin-top: 25px;
     font-family: "Hamburger";
-    font-size: 25px;
-    font-weight: lighter;
     border-top: solid rgba(183, 183, 183, 1);
 }
 
@@ -249,5 +253,26 @@ footer {
 .foot-col {
     flex: 1;
     text-align: center;
-    font-size: 30px;
 }
+
+.foot-col h1 {
+    font-size: 30px;
+    margin: 5px 0px;
+    font-weight: lighter;
+}
+
+.foot-col a {
+    font-size: 27.5px;
+    margin: 5px 0px;
+    font-weight: lighter;
+    color: black;
+    text-decoration: none;
+}
+
+.foot-list {
+    list-style-type: none;
+    padding: 0; /* removes indent made from li */
+    margin-top: 0;
+}
+
+
