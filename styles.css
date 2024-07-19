@@ -130,7 +130,6 @@ body {
 /*******************************
 * Favorites section (homepage) *
 *******************************/
-
 .favorites-title {
     text-align: center;
     font-size: 55px;
@@ -192,12 +191,61 @@ body {
     font-size: 32.5px;
 }
 
+/*************************
+* Specific Recipes pages *
+*************************/
+.recipe-container {
+    font-family: "Hamburger";
+    background-color: rgba(220, 220, 215, 0.6);
+    width: 100vw;
+   /* display: grid;
+    column-gap: 2rem;*/
+}
+
+.recipe-name {
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-left: 1rem;
+
+}
+
+.recipe-container, .recipe-image {
+    display: inline-block; /* multiple divs on same line */
+}
+
+.ingredients-list {
+    width: 35rem;
+    border: solid rgba(10, 10, 10, 1);
+    margin-left: 2rem;
+    border-radius: 7.5px;
+}
+
+.ingredients-title {
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 7.5px;
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.ingredient-tick {
+    margin: 0;
+}
+
+.ingredient {
+    font-size: 30px;
+
+}
+
+label {
+    display: block;
+}
+
 /**************************************
 * Footer section (same for all pages) *
 **************************************/
 footer {
     background-color: rgba(255, 255, 255, 0.7);
-    height: 190px;
     margin-top: 25px;
     font-family: "Hamburger";
     border-top: solid rgba(183, 183, 183, 1);
@@ -231,5 +279,3 @@ footer {
     padding: 0; /* removes indent made from li */
     margin-top: 0;
 }
-
-
