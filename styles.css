@@ -215,7 +215,7 @@ body {
 
 .ingredients-list {
     width: 35rem;
-    border: solid rgba(10, 10, 10, 1);
+    border: solid rgba(10, 10, 10, 0.75);
     margin-left: 2rem;
     border-radius: 7.5px;
 }
@@ -234,11 +234,52 @@ body {
 
 .ingredient {
     font-size: 30px;
-
+    font-weight: bold;
 }
 
 label {
     display: block;
+}
+
+.make-time-container {
+    width: 35rem;
+    border: solid rgba(10, 10, 10, 0.75);
+    margin-left: 2rem;
+    border-radius: 7.5px;
+    display: flex;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.make-time-col {
+    flex: 1;
+}
+
+.make-time-item {
+    list-style-type: none;
+    font-size: 30px;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.time {
+    font-weight: bold;
+}
+
+.recipe-description {
+    width: 900px;
+    margin-left: 2rem;
+}
+
+.description-text {
+    font-family: "Hamburger";
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.recipe-steps {
+    font-family: "Hamburger";
+    font-size: 30px;
 }
 
 /**************************************
