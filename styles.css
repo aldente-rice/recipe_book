@@ -34,6 +34,7 @@
     border: none;
     color: black;
     text-decoration: none;
+    font-weight: lighter;
 }
 
 /*.quick-content {
@@ -135,16 +136,19 @@ body {
     font-size: 55px;
     margin: 10px 0px;
     color: rgba(0, 0, 0, 1);
-    font-weight: lighter;
+    font-weight: bold;
 }
 
-.favorites-section {
-    display: block;
-    margin: 0px 30px;
-
+.recipe-display-container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
 }
 
-.recipe-display :is(h2, a) {
+.recipe-display-container :is(h2, a) {
     margin-top: 0px;
     color: black;
     text-decoration: none;
@@ -153,19 +157,20 @@ body {
     text-align: center;
     padding-top: 0px;
     font-size: 30px;
+    font-weight: lighter;
 }
 
-.favorites-image img {
+
+.favorites-recipe {
+
+}
+
+.favorites-recipe img {
     width: 200px; height: 200px;
     border-radius: 25px;
     box-shadow: 0px 00px 5px 5px rgba(255, 255, 255, 0.8);
 }
 
-.favorites-image {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
 .invisible-divide {
     width: 50px;
@@ -179,7 +184,7 @@ body {
   font-size: 55px;
   margin: 10px 0px;
   color: rgba(0, 0, 0, 1);
-  font-weight: lighter;
+  font-weight: bold;
 }
 
 .about-me {
@@ -304,7 +309,7 @@ footer {
 .foot-col h1 {
     font-size: 30px;
     margin: 5px 0px;
-    font-weight: lighter;
+    font-weight: 575;
 }
 
 .foot-col a {
