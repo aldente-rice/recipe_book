@@ -140,12 +140,14 @@ body {
 }
 
 .recipe-display-container {
-    width: 100vw;
+    width: 80vw;
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     justify-content: center;
     align-items: center;
     column-gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .recipe-display-container :is(h2, a) {
@@ -199,19 +201,50 @@ body {
 /*************************
 * Specific Recipes pages *
 *************************/
+.recipe-name {
+    font-size: 75px;
+    margin-bottom: 0;
+    margin-left: 1rem;
+    font-family: "Hamburger";
+    margin-top: 1rem;
+}
+
+.specific-image-container {
+    width: 500px;
+    height: 500px;
+    margin-left: 2rem;
+}
+
+.specific-image {
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.9);
+    position: relative;
+}
+
+.specific-image-container:hover img{
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.center-hover-text {
+    transition: 0.5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+}
+
 .recipe-container {
     font-family: "Hamburger";
     background-color: rgba(220, 220, 215, 0.6);
     width: 100vw;
    /* display: grid;
     column-gap: 2rem;*/
-}
-
-.recipe-name {
-    font-size: 50px;
-    margin-bottom: 0;
-    margin-left: 1rem;
-
+    margin-top: 1rem;
 }
 
 .recipe-container, .recipe-image {
