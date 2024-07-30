@@ -125,7 +125,7 @@ body {
 .front-page {
     font-family: "Hamburger";
     margin-left: 10px; margin-right: 10px;
-
+    width: 100%;
 }
 
 /*******************************
@@ -134,20 +134,26 @@ body {
 .favorites-title {
     text-align: center;
     font-size: 55px;
-    margin: 10px 0px;
+    margin: 0 auto;
     color: rgba(0, 0, 0, 1);
     font-weight: bold;
+    width: 60%;
 }
 
 .recipe-display-container {
-    width: 80vw;
+    /*width: 1000px;
+    min-width: 300px;*/
+    width: 60%;
+    position: relative;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
     justify-content: center;
     align-items: center;
     column-gap: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1em auto;
+    position: relative;
 }
 
 .recipe-display-container :is(h2, a) {
@@ -164,7 +170,7 @@ body {
 
 
 .favorites-recipe {
-
+    margin: 1em auto;
 }
 
 .favorites-recipe img {
@@ -178,19 +184,29 @@ body {
     width: 50px;
 }
 
+.front-page h1 {
+    border-bottom: 2.5px solid  rgba(183, 183, 183, 1);
+}
+
 /********************************
 * About Me section on home page *
 ********************************/
 .about-me-title {
-  text-align: center;
-  font-size: 55px;
-  margin: 10px 0px;
-  color: rgba(0, 0, 0, 1);
-  font-weight: bold;
+    text-align: center;
+    font-size: 55px;
+    margin: 10px 0px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+}
+
+.about-me-container {
+    width: 60%;
+    position: relative;
+    margin: 0 auto;
 }
 
 .about-me {
-
+    text-align: center;
 }
 
 .about-me h2 {
@@ -213,6 +229,8 @@ body {
     width: 500px;
     height: 500px;
     margin-left: 2rem;
+    position: relative;
+    transition: 0.5s ease;
 }
 
 .specific-image {
@@ -220,23 +238,37 @@ body {
     height: 500px;
     border-radius: 15px;
     box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.9);
-    position: relative;
+    /* makes image have overlay transition */
+    opacity: 1;
+    display: block;
+    transition: 0.5s ease;
 }
 
 .specific-image:hover {
-    opacity: 0.75;
+    opacity: 0.3;
     cursor: pointer;
-    transition: 0.6s ease;
+}
+
+.center-hover-container {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.center-hover-container:hover {
+    opacity: 1;
 }
 
 .center-hover-text {
-
-    opacity: 1;
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: black;
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
 }
 
 .recipe-container {
