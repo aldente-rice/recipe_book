@@ -37,25 +37,6 @@
     font-weight: lighter;
 }
 
-/*.quick-content {
-    font-family: "Hamburger";
-    font-size: 25pt;
-    border: none;
-    cursor: pointer;
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    width: 100%;
-    overflow: auto;
-    z-index: 2;
-}
-
-.quick-drop-button:hover .quick-content {
-    display: block;
-}*/
-
-
-
 /**************************
 * includes the hero image *
 **************************/
@@ -64,7 +45,7 @@
 	    url("./fuzhou-city.jpg"); /* a slight red tint on hero image */
 	filter: blur(0.3px);
 	height: 400px;
-
+    width: 100%;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -108,6 +89,7 @@ body {
     font-size: 30px;
     border-radius: 25px;
     border: solid rgba(183, 183, 183, 1);
+    background-color: rgba(255, 255, 255, 0.9);
     left: 50%;
     width: 80%;
     height: 35px;
@@ -124,7 +106,7 @@ body {
 
 .front-page {
     font-family: "Hamburger";
-    margin-left: 10px; margin-right: 10px;
+    margin: 0;
     width: 100%;
 }
 
@@ -154,6 +136,7 @@ body {
     column-gap: 40px;
     margin: 1em auto;
     position: relative;
+    overflow-x: scroll;
 }
 
 .recipe-display-container :is(h2, a) {
@@ -217,28 +200,38 @@ body {
 /*************************
 * Specific Recipes pages *
 *************************/
+.recipe-page-content {
+    margin: 0;
+
+}
+
+h1 {
+    text-align: center;
+}
+
 .recipe-name {
     font-size: 75px;
     margin-bottom: 0;
     margin-left: 1rem;
     font-family: "Hamburger";
     margin-top: 1rem;
+    font-weight: 500;
 }
 
 .specific-image-container {
-    width: 500px;
-    height: 500px;
-    margin-left: 2rem;
+    width: 375px;
+    height: 375px;
+    /*margin-left: 2rem;*/
+    margin: 0 auto;
     position: relative;
     transition: 0.5s ease;
 }
 
 .specific-image {
-    width: 500px;
-    height: 500px;
+    width: 375px;
+    height: 375px;
     border-radius: 15px;
     box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.9);
-    /* makes image have overlay transition */
     opacity: 1;
     display: block;
     transition: 0.5s ease;
@@ -249,53 +242,37 @@ body {
     cursor: pointer;
 }
 
-.center-hover-container {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.center-hover-container:hover {
-    opacity: 1;
-}
-
-.center-hover-text {
-    background-color: #04AA6D;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
+.specific-image:active {
+    width: 500px;
+    height: 500px;
 }
 
 .recipe-container {
     font-family: "Hamburger";
     background-color: rgba(220, 220, 215, 0.6);
-    width: 100vw;
+    /*width: 60%;*/
+    margin: 0 auto;
    /* display: grid;
     column-gap: 2rem;*/
-    margin-top: 1rem;
+    /*margin-top: 1rem;*/
 }
 
-.recipe-container, .recipe-image {
-    display: inline-block; /* multiple divs on same line */
-}
+    /*.recipe-container, .recipe-image {
+        display: inline-block; *//* multiple divs on same line *//*
+    }*/
 
 .ingredients-list {
     width: 35rem;
-    border: solid rgba(10, 10, 10, 0.75);
     margin-left: 2rem;
     border-radius: 7.5px;
+    border: 5px solid rgba(175, 175, 175, 1);
 }
 
 .ingredients-title {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: lighter;
     border-radius: 7.5px;
-    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
     background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -305,7 +282,7 @@ body {
 
 .ingredient {
     font-size: 30px;
-    font-weight: bold;
+    font-weight: lighter;
 }
 
 label {
@@ -319,7 +296,7 @@ label {
     border-radius: 7.5px;
     display: flex;
     margin-top: 1rem;
-    font-weight: bold;
+    border: 5px solid rgba(175, 175, 175, 1);
 }
 
 .make-time-col {
@@ -331,10 +308,11 @@ label {
     font-size: 30px;
     padding: 0;
     margin: 1rem 0;
+    font-weight: lighter;
 }
 
 .time {
-    font-weight: bold;
+
 }
 
 .recipe-description {
